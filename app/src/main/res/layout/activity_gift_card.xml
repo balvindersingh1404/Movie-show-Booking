@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/title_bar"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+    <RelativeLayout android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.balvinder.bookYourShow.util.MyTextView
+            android:id="@+id/titletext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="GIFT CARD"
+            app:typeface="cafeta.otf"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
+<View
+    android:id="@+id/hr"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/title_bar"
+
+    android:background="#c0c0c0" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/hr"
+    android:id="@+id/button"
+    android:orientation="horizontal"
+    >
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="11dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:text="@string/what_can_make"/>
+</LinearLayout>
+<View
+    android:id="@+id/hr1"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/button"
+    android:background="#c0c0c0" />
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/denomination"
+    android:layout_below="@id/hr1"
+    android:paddingTop="10dp"
+    android:textSize="11dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:text="@string/select_denominations"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:id="@+id/three"
+    android:layout_below="@id/denomination"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:background="#f7f7f7">
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:src="@drawable/gift_card"
+        android:layout_marginRight="10dp"/>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Rs. 300"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_below="@+id/denomination"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_alignTop="@id/three"
+    >
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        app:typeface="cafeta.otf"
+        android:onClick="decreasethree"
+        android:textSize="20dp"
+        android:id="@+id/minusthree"
+        android:textColor="#ffcb05"
+        />
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="0"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:background="#000000"
+        android:textColor="#ffcb05"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/numberthree" />
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="+"
+        android:onClick="increasethree"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="9dp"
+        android:paddingLeft="9dp"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:id="@+id/addthree"
+        android:textColor="#ffcb05"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:id="@+id/five"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/three"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:background="#f7f7f7">
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:src="@drawable/gift_card"
+        android:layout_marginRight="10dp"/>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Rs. 500"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_below="@+id/three"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="10dp"
+    android:layout_alignTop="@id/five"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    >
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:onClick="decreasefive"
+        android:id="@+id/minusfive"
+        android:textColor="#ffcb05"
+        />
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="0"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:background="#000000"
+        android:textColor="#ffcb05"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/numberfive" />
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="+"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="9dp"
+        android:paddingLeft="9dp"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:onClick="increasefive"
+        android:id="@+id/addfive"
+        android:textColor="#ffcb05"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:id="@+id/ten"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/five"
+    android:paddingRight="14dp"
+    android:paddingTop="10dp"
+    android:background="#f7f7f7">
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:src="@drawable/gift_card"
+        android:layout_marginRight="10dp"/>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Rs. 1000"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_below="@+id/five"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_alignTop="@id/ten"
+    android:layout_marginBottom="10dp"
+    >
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        app:typeface="cafeta.otf"
+        android:onClick="decreaseten"
+        android:textSize="20dp"
+        android:id="@+id/minusten"
+        android:textColor="#ffcb05"
+        />
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:text="0"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:background="#000000"
+        android:textColor="#ffcb05"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/numberten" />
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="+"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="9dp"
+        android:paddingLeft="9dp"
+        app:typeface="cafeta.otf"
+        android:textSize="20dp"
+        android:onClick="increaseten"
+        android:id="@+id/addten"
+        android:textColor="#ffcb05"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_above="@+id/giftcardtotal"
+    android:background="#c0c0c0" />
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+    android:id="@+id/giftcardtotal"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_above="@+id/placeorder"
+    android:textSize="22dp"
+    android:gravity="bottom"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:text="Gift Card Total"
+    android:textColor="#30302e"
+    android:textStyle="bold" />
+<TextView
+    android:id="@+id/total"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_above="@+id/placeorder"
+    android:textSize="22dp"
+    android:gravity="right"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:text="Rs. 0"
+    android:textColor="#30302e"
+    android:textStyle="bold" />
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+    android:id="@+id/placeorder"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    app:typeface="cafeta.otf"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="#ffcb05"
+    android:textSize="25dp"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:text="PLACE ORDER"
+    android:textAlignment="center"
+    android:textColor="#30302e"
+    android:textStyle="bold" />
+</RelativeLayout>

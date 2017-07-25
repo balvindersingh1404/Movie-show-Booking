@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/topbar">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/backloc"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/back" />
+
+            <com.example.balvinder.bookYourShow.util.MyTextView
+                android:id="@+id/changelocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="CHANGE LOCATION"
+                app:typeface="cafeta.otf"
+                android:textColor="#000000"
+                android:textSize="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:id="@+id/hr"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_alignBottom="@id/changelocation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#C0C0C0" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topbar"
+            android:id="@+id/searchbar"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"
+                android:id="@+id/search"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"/>
+
+            <EditText
+                android:hint="Search Location"
+                android:layout_width="320dp"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/searchlocation"
+                android:textSize="13dp"
+                android:textColorHint="#AEAEAE"
+                android:textColor="#000000"
+                android:layout_marginLeft="40dp"
+                android:textCursorDrawable="@null"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/hr1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/searchbar"
+            android:layout_marginTop="5dp"
+            android:background="#c0c0c0" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listcity"
+            android:layout_below="@+id/hr1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

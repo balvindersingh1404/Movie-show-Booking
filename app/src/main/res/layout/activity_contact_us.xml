@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1">
+        <include
+            android:id="@+id/container_header_lyt"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            layout="@layout/header"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <View
+                android:id="@+id/hr"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/hr">
+
+                <TextView
+                    android:id="@+id/feedbackTextView"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/feedback1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/tickfeed"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/tick" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hr1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/feedback"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:id="@+id/advrtising"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/hr1">
+
+                <TextView
+                    android:id="@+id/adv"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/advertising_corporate"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/tickadv"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/tick" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hr2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/advrtising"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:id="@+id/bulkbooking"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/hr2">
+
+                <TextView
+                    android:id="@+id/bulkbook"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/bulk_booking"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/tickbulk"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/tick" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hr3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/bulkbooking"
+                android:background="#c0c0c0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr3"
+                android:background="#eaeaea">
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/border"
+                    android:ems="30"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="#aeacac"
+                    android:textSize="13dp"
+                    android:textCursorDrawable="@null"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/emailaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_alignEnd="@+id/phone"
+                    android:layout_alignLeft="@+id/phone"
+                    android:layout_alignRight="@+id/phone"
+                    android:layout_alignStart="@+id/phone"
+                    android:layout_below="@+id/msgnumber"
+                    android:textCursorDrawable="@null"
+
+                    android:background="@drawable/border"
+                    android:ems="30"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="#aeacac"
+                    android:textSize="13dp"/>
+
+                <EditText
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_alignEnd="@+id/emailaddress"
+                    android:layout_alignLeft="@+id/emailaddress"
+                    android:layout_alignRight="@+id/emailaddress"
+                    android:layout_alignStart="@+id/emailaddress"
+                    android:layout_below="@+id/msgemail"
+                    android:textSize="13dp"
+                    android:background="@drawable/border"
+                    android:gravity="top|left"
+                    android:hint="Type Your Comments Here"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColorHint="#aeacac"
+                    android:textCursorDrawable="@null"
+                    />
+
+
+                <TextView
+                    android:id="@+id/msgnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/phone"
+                    android:layout_alignStart="@+id/phone"
+                    android:layout_below="@+id/phone"
+                    android:textSize="9dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:text="We promise to keep your number safe"
+                    />
+
+                <TextView
+                    android:id="@+id/msgemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/emailaddress"
+                    android:layout_alignStart="@+id/emailaddress"
+                    android:layout_below="@+id/emailaddress"
+                    android:textSize="9dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="We promise to keep the noise low" />
+
+                <TextView
+                    android:id="@+id/msgcomment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/comment"
+                    android:layout_alignStart="@+id/comment"
+                    android:layout_below="@+id/comment"
+                    android:textSize="9dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="You message should have at least 15 characters"
+                    android:layout_marginBottom="70dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:id="@+id/submit"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="SUBMIT"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFCB05"
+        android:ems="30"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        app:typeface="cafeta.otf"/>
+
+</RelativeLayout>

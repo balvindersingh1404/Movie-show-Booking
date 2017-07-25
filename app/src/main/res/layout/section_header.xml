@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.balvinder.bookYourShow.util.MyTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0E0E0"
+    android:textColor="#66303030"
+    android:textSize="12dp"
+    app:typeface="helvetica_light.ttf"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+
+    style="?android:attr/listSeparatorTextViewStyle"
+    android:id="@+id/headerItem" />

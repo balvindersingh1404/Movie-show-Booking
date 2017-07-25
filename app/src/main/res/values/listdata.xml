@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menulist">
+        <item>ALL THEATRES</item>
+        <item>COMING SOON</item>
+        <item>MY TICKETS</item>
+        <item>MY PREFERENCES</item>
+        <item>GIFT CARD</item>
+        <item>OFFERS</item>
+        <item>CONTACT US</item>
+        <item>TC | PRIVACY</item>
+    </string-array>
+</resources>

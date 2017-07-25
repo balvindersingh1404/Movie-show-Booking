@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/emailmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/email"
+            android:layout_alignStart="@+id/email"
+            android:layout_below="@+id/email"
+            android:text="We promise,we will keep our volume low." />
+
+        <TextView
+            android:id="@+id/namemsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:text="We promise,we will keep your name safe." />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/hr"
+            android:layout_alignRight="@+id/hr"
+            android:layout_below="@+id/hr"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/border"
+            android:ems="30"
+            android:textColorHint="#aeacac"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <View
+            android:id="@+id/horizontalrow"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/gmail"
+            android:layout_marginTop="12dp"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:id="@+id/confirmdetails"
+            android:layout_width="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="13dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/horizontalrow"
+            android:text="PLEASE CONFIRM YOUR DETAILS TO COMPLETE SIGN-UP" />
+
+        <View
+            android:id="@+id/hr"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/confirmdetails"
+            android:layout_marginTop="12dp"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:id="@+id/continuegmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#FFCB05"
+            android:ems="30"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="CONTINUE"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="15dp"
+            android:layout_gravity="bottom"
+            />
+
+        <TextView
+            android:id="@+id/mobilemsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/phonenumber"
+            android:layout_alignStart="@+id/phonenumber"
+            android:layout_below="@+id/phonenumber"
+            android:layout_marginBottom="40dp"
+            android:text="Dont worry,we will use your number for transactional operations only" />
+
+        <ImageView
+            android:id="@+id/backhome"
+            android:layout_width="54dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/back"
+            android:clickable="true"
+            android:layout_above="@+id/horizontalrow"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name" />
+
+        <TextView
+            android:id="@+id/gmail"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="GUEST REGISTER"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#616161"
+            android:textSize="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/name"
+            android:layout_alignEnd="@+id/name"
+            android:layout_marginTop="11dp"
+            android:paddingLeft="50dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border"
+            android:ems="30"
+            android:textColorHint="#aeacac"
+            android:hint="Email Address"
+            android:inputType="textPersonName"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/namemsg"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:layout_alignRight="@+id/name"
+            android:layout_alignEnd="@+id/name" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border"
+            android:ems="30"
+            android:textColorHint="#aeacac"
+            android:hint="Phone Number"
+            android:inputType="textPersonName"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/emailmsg"
+            android:layout_alignLeft="@+id/email"
+            android:layout_alignStart="@+id/email"
+            android:layout_alignRight="@+id/email"
+            android:layout_alignEnd="@+id/email" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

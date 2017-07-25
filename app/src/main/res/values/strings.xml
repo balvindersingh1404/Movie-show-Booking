@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BookYourShow</string>
+
+    <!-- Strings related to login -->
+    <string name="receiveotp"><u>Resend OTP</u></string>
+
+    <string name="forgot_password"> <u>Forgot Password</u></string>
+    <string name="registerWithEmail"> <u><b>Or, register with email</b></u></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="terms_and_conditions">TERMS &amp; CONDITIONS</string>
+
+    <string name="feedback1">Feedback</string>
+    <string name="advertising_corporate">Advertising/Corporate</string>
+    <string name="bulk_booking">Bulk Booking</string>
+
+    <string name="facebook_app_id">413293282349604</string>
+
+
+    <string name="recommendations_for_you">If we know your location we will make better movie recommendations for you</string>
+    <string name="we_will_keep">we will keep the battery usage to minimum</string>
+    <string name="recommendations"><u>No thanks, I am fine ignoring recommendations.</u></string>
+    <string name="what_can_make">WHAT CAN MAKE A BETTER GIFT CARD THAN A MOVIE</string>
+    <string name="select_denominations">Select denominations of gift card</string>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "984085602564",
+    "project_id": "shining-hydra-149208"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984085602564:android:a9b3567fc57e7fd8",
+        "android_client_info": {
+          "package_name": "com.example.balvinder.pvr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984085602564-rl3j6t1g869dt06qov2k3i4qdq7oes0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.balvinder.pvr",
+            "certificate_hash": "5C15801857AC9534CA385E8A31FAB8D7A5DB4BEA"
+          }
+        },
+        {
+          "client_id": "984085602564-4s7sjenf7r1965m7g9m79ckdch2e3i5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiCvfRDDPa4QNW5_9pC81DBss-eYTseeY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

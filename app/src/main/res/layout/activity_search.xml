@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@id/search"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="7dp"
+            android:textColor="#000000"
+            android:id="@+id/cancel"
+            android:layout_alignParentRight="true"
+            android:text="Cancel"
+            android:textSize="16dp"
+            />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="38dp"
+            android:hint="  Search"
+            android:background="@drawable/border"
+            android:paddingLeft="10dp"
+            android:textSize="12dp"
+            android:src="@drawable/search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textCursorDrawable="@null"
+            />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/hr"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="5dp"
+        android:background="#c0c0c0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/hr"
+        android:id="@+id/button"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="MOVIES"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:textSize="12sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="#ffcb05"
+            android:layout_height="match_parent"
+            android:id="@+id/movies"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:text="THEATRES"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textSize="12sp"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"
+            android:layout_height="match_parent"
+            android:id="@+id/theatres"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <View
+            android:id="@+id/hr3"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#c0c0c0" />
+        <TextView
+            android:text="LATEST RELEASE"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textSize="12sp"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"
+            android:layout_height="match_parent"
+            android:id="@+id/latestrelease"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/hr1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/button"
+        android:background="#c0c0c0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/datanotfound"
+        android:layout_below="@+id/hr1"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:visibility="invisible"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:paddingTop="80dp"
+            android:src="@drawable/myticketsnewuser"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:layout_marginBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="Sorry! We could not find out what you were looking for."
+            android:textColor="#404040"/>
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listsearch"
+        android:layout_below="@+id/hr1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

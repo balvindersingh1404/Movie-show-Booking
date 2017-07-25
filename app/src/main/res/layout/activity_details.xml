@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/title_bar"-->
+        <!--android:background="#ffffff"-->
+        <!--android:visibility="visible"-->
+       >
+        <RelativeLayout android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+             android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+            <com.example.balvinder.bookYourShow.util.MyTextView
+                android:id="@+id/titletext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="title"
+                app:typeface="cafeta.otf"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/backimage123"
+                android:clickable="true"
+                />
+
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/hr"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title_bar"
+        android:background="#c0c0c0" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/topbar"
+    android:layout_alignParentLeft="true"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:id="@+id/pic"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rectangle_default"
+        />
+        <RelativeLayout
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="313dp"
+            android:layout_marginTop="10dp">
+            <include
+                android:id="@+id/container_header_lyt"
+                android:layout_height="wrap_content"
+                android:layout_width="38dp"
+                layout="@layout/like_view" />
+        </RelativeLayout>
+
+    <View
+        android:id="@+id/hr1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pic"
+        android:background="#c0c0c0" />
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:id="@+id/cast"
+        android:layout_below="@id/hr1"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Cast"
+        android:layout_marginTop="15dp"
+        />
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:id="@+id/castdata"
+        android:layout_below="@id/cast"
+        app:typeface="helvetica_neu_reg.ttf"
+        android:textSize="12dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Ajay Devgan ,Sayesha SaigalIndian ,Erika Kaar ,Abigail Eames ,Vir Das,Girish Karnad ,Saurabh Shukla ,Bijou Thaangjam."/>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:id="@+id/director"
+        android:layout_below="@id/castdata"
+        android:paddingTop="5dp"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Director"
+        android:textStyle="bold"/>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:id="@+id/directordata"
+        android:layout_below="@id/director"
+        android:textSize="12dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Ajay Devgan"
+        app:typeface="helvetica_neu_reg.ttf"/>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:id="@+id/plot"
+        android:layout_below="@id/directordata"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="Plot"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/plot">
+
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.balvinder.bookYourShow.util.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:id="@+id/plotdata"
+                android:textSize="12dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                app:typeface="helvetica_neu_reg.ttf"
+                android:layout_marginBottom="100dp"
+                android:text="The film opens with a Himalayan mountaineer, Shivaay, rapelling down a steep and dangerous cliff in the Himalayas. Shivaay lives alone in a small house in the mountains and makes a living by providing treks and climbing expeditions to tourists. On one such trek he meets the beautiful Olga, a student from Bulgaria and saves her from an avalanche. They eventually fall in love. Olga becomes pregnant. He implores her to remain in India with him, but despite her love for Shivaay, Olga does not want the child.. She wants to return to Bulgaria and asks Shivaay to return with her but he cannot adapt to that life. He begs her to give him the child after which he will not stop her. Olga has a beautiful daughter, Gaura, who looks just like her mother, and asks Shivaay to tell the daughter that her mother passed away, and leaves India forever."/>
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFCB05"
+        android:ems="30"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="BOOK"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        app:typeface="cafeta.otf"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

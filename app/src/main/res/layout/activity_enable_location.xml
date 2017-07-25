@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/back"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/back" />
+
+     <com.example.balvinder.bookYourShow.util.MyTextView
+    android:id="@+id/titletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="ENABLE LOCATION"
+        app:typeface="cafeta.otf"
+        android:textColor="#000000"
+        android:textSize="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:id="@+id/horizontalrow"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/titletext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#C0C0C0" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/enablelocation"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/recommendations_for_you"
+        android:textColor="#404040"/>
+</LinearLayout>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+    android:id="@+id/enablelocation"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    app:typeface="cafeta.otf"
+    android:background="#ffcb05"
+    android:clickable="true"
+    android:layout_marginTop="10dp"
+    android:textSize="23dp"
+    android:gravity="bottom"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="50dp"
+    android:paddingLeft="50dp"
+    android:layout_gravity="center"
+    android:text="ENABLE LOCATION"
+    android:textAlignment="center"
+    android:textColor="#30302e"
+    android:textStyle="bold" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textAlignment="center"
+    android:layout_marginTop="5dp"
+    android:textSize="12dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:text="@string/we_will_keep"
+    android:textColor="#aeaeae"/>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textAlignment="center"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:textSize="14dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    app:typeface="helvetica_neu.ttf"
+    android:text="@string/recommendations"
+    android:textColor="#404040"/>
+
+</LinearLayout>

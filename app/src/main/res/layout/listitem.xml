@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--  Single List Item Design -->
+<com.example.balvinder.bookYourShow.util.MyTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/listItem"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:padding="10dip"
+android:textSize="13dip"
+    android:textColor="#000000"
+    android:background="#ffffff"
+    android:clickable="true">
+</com.example.balvinder.bookYourShow.util.MyTextView>
+

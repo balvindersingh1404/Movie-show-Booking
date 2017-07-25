@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="166dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/movieImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rectangle_default" />
+                    <RelativeLayout
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/movieImage"
+                        android:layout_margin="5dp">
+                        <include
+                            android:id="@+id/container_header_lyt"
+                            android:layout_height="wrap_content"
+                            android:layout_width="38dp"
+                            layout="@layout/like_view"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_gravity="top"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.51">
+                    <com.example.balvinder.bookYourShow.util.MyTextView
+                        android:id="@+id/movieName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        app:text=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:singleLine="true"
+                        app:typeface="cafeta.otf"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"/>
+
+                    <com.example.balvinder.bookYourShow.util.MyTextView
+                        android:id="@+id/movieDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:singleLine="true"
+                        android:text=""
+                        app:typeface="helvetica_neu_reg.ttf"
+                        android:textSize="10sp"
+                        android:layout_below="@+id/movieName"
+
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

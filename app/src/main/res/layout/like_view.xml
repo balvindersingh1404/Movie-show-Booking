@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+android:background="@drawable/like_view_bg"
+
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:button="@drawable/checkbox_selector"
+        android:checked="false"
+        android:id="@+id/likeImage"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likeCount"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>

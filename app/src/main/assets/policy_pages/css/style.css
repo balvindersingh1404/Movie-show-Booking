@@ -1,0 +1,40 @@
+﻿/* CSS Document */
+
+@font-face
+{
+	font-family:"cafeta";
+	src:url(../fonts/CAFETA__.TTF) fonmat('truetype');
+}
+@font-face
+{
+	font-family:"helvetica";
+	src:url(../fonts/helvetica-normal.TTF) fonmat('truetype');
+}
+
+body
+{
+	font-family:"helvetica";
+}
+a
+{
+	text-decoration:none;
+}
+.headingclass
+{
+	font-family:"helvetica";
+	font-size:16px;
+	color:rgba(48,48,48,1);	
+	margin:0;
+}
+.pclass
+{
+	font-family:"helvetica";
+	font-size:13px;
+	color:rgba(48,48,48,0.8);
+	margin-top: 5px;
+	text-align:justify;
+}
+.pclass span
+{
+color:#ffd537;
+}

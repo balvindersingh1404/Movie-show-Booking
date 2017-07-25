@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+
+    <include
+        android:id="@+id/container_header_lyt"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        layout="@layout/header"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/container_header_lyt">
+
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/emailmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/email"
+                android:layout_alignStart="@+id/email"
+                android:layout_below="@+id/email"
+                android:text="We promise to keep the noise low"
+                android:layout_marginTop="5dp"
+                android:textSize="11dp"/>
+
+            <TextView
+                android:id="@+id/namemsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_alignStart="@+id/name"
+                android:layout_below="@+id/name"
+                android:text="We promise to keep your name safe"
+                android:textSize="11dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/hr"
+                android:layout_alignRight="@+id/hr"
+                android:layout_below="@+id/hr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:ems="30"
+                android:paddingLeft="10dp"
+                android:textColorHint="#aeacac"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="12dp"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/confirmdetails"
+                android:layout_width="match_parent"
+                android:paddingTop="8dp"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_alignStart="@+id/name"
+                android:layout_below="@+id/horizontalrow"
+                android:text="PLEASE CONFIRM YOUR DETAILS TO COMPLETE SIGN-UP"
+                android:textColor="#000000"
+                android:paddingLeft="7dp"/>
+
+            <View
+                android:id="@+id/hr"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/confirmdetails"
+                android:layout_marginTop="12dp"
+                android:background="#c0c0c0" />
+
+
+            <TextView
+                android:id="@+id/mobilemsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/phonenumber"
+                android:layout_alignStart="@+id/phonenumber"
+                android:layout_below="@+id/phonenumber"
+                android:layout_marginBottom="100dp"
+                android:text="We will only use your number for tranactional information"
+                android:layout_marginTop="5dp"
+                android:textSize="11dp"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="30"
+                android:textColorHint="#aeacac"
+                android:hint="Email Address"
+                android:inputType="textPersonName"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/namemsg"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@+id/name"
+                android:layout_alignStart="@+id/name"
+                android:layout_alignRight="@+id/name"
+                android:layout_alignEnd="@+id/name"
+                android:textSize="12dp"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000"
+                />
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border"
+                android:ems="30"
+                android:textColorHint="#aeacac"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/emailmsg"
+                android:layout_marginTop="5dp"
+                android:layout_alignRight="@+id/email"
+                android:layout_alignEnd="@+id/email"
+                android:layout_alignLeft="@+id/email"
+                android:layout_alignStart="@+id/email"
+                android:textSize="12dp"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.example.balvinder.bookYourShow.util.MyTextView
+        android:id="@+id/continuegoogle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFCB05"
+        android:ems="30"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="CONTINUE"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        app:typeface="cafeta.otf"
+        />
+</RelativeLayout>
